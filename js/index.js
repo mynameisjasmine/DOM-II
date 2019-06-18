@@ -27,22 +27,27 @@ x.addEventListener('mouseleave', function(){
 
 //Event Listener 3
 window.addEventListener('mousedown', function(event){
- alert('This is the fubus!');
+ alert('My name is Alana Limage!');
  console.log(event); 
 }); 
 //Event Listener 4
-let eventblurb = document.getElementsByClassName('destination');
+/*let eventblurb = document.querySelector('destination');
 eventblurb.forEach(function(x,i){
  x.addEventListener('mouseenter', function(event){
-    eventblurb.font.size = '50px';
+    eventblurb.style.border.color = 'green';
     });
-})
+}) */
 
 
 
 
 //Event Listener 5
-
+let imgChanger = document.querySelector( '.bus-img')
+imgChanger.addEventListener('click', function(){
+if(img.src === 'img/fun-bus.jpg') {
+    img.src === 'img/destination.jpg'
+};
+});
 
 //Event Listener 6
 
