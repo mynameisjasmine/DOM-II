@@ -8,14 +8,18 @@ eventnav.addEventListener('mouseover', function(event){
 });
 
 //Event Listener 2
-let eventimage = document.getElementById('bus-img');
-eventimage.addEventListener('focus', function(event){
-    event.target.style.background = 'green';
- });
+/*let eventbutton = document.getElementsByClassName('btn');
+eventbutton.addEventListener('click', function(event){
+    event.target.style.color = 'red';
+ }); */
 
 //Event Listener 3
-
+window.addEventListener('mousedown', function(event){
+ alert('This is the fubus!');
+ console.log(event); 
+}); 
 //Event Listener 4
+
 
 //Event Listener 5
 
