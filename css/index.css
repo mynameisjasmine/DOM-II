@@ -1,3 +1,6 @@
+.border {
+  border: 2px solid red;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -276,6 +279,7 @@ img {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content .text-content {
+  padding-top: 5rem;
   padding-left: 1%;
   padding-right: 0;
 }
@@ -284,7 +288,26 @@ img {
     order: 1;
   }
 }
+.home .inverse-content .pop-up {
+  width: 700px;
+  margin-left: 50px;
+  background-color: #c8e4ee;
+  position: relative;
+  display: flex;
+  justify-items: center;
+}
+.home .inverse-content .pop-up .form-container input[type=text],
+.home .inverse-content .pop-up .form-container input[type=email],
+.home .inverse-content .pop-up .form-container input[type=submit] {
+  padding: 10px 15px 5px 10px;
+}
+.home .inverse-content .pop-up .mail-list-container {
+  padding-left: 30rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
 .home .inverse-content .img-content {
+  padding-top: 2.5rem;
   padding-right: 1%;
   padding-left: 0;
 }
