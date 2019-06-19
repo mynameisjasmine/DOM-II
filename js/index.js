@@ -21,15 +21,19 @@ x.addEventListener('mouseleave', function(){
     eventbutton[i].style.color = 'white';
 });
 });
-/*eventbutton.addEventListener('mouseenter', function(event){
-    event.target.style.color = 'red';
- });  */
+  
 
 //Event Listener 3
-window.addEventListener('mousedown', function(event){
- alert('My name is Alana Limage!');
+
+window.onload = function prepareEventHandlers() {
+ alert('Welcome to Fun Bus!');
+};
+/*window.addEventListener('mousedown', function(event){
+ alert('This is Fun Bus!');
  console.log(event); 
-}); 
+});  */
+
+
 //Event Listener 4
 /*let eventblurb = document.querySelector('destination');
 eventblurb.forEach(function(x,i){
@@ -42,11 +46,12 @@ eventblurb.forEach(function(x,i){
 
 
 //Event Listener 5
-let imgChanger = document.querySelector( '.bus-img')
+let imgChanger = document.querySelector(' .home .intro img')
+console.log(imgChanger);
+
+//let image = document.querySelector('img')
 imgChanger.addEventListener('click', function(){
-if(img.src === 'img/fun-bus.jpg') {
-    img.src === 'img/destination.jpg'
-};
+    imgChanger.src = 'img/destination.jpg'
 });
 
 //Event Listener 6

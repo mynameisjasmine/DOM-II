@@ -3,10 +3,12 @@
   .intro {
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
+    
 
     img {
       max-width: 100%;
       height: auto;
+      
     }
 
     h2 {
@@ -51,20 +53,49 @@
     }
   }
 
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
     .text-content {
+      padding-top: 5rem;
       padding-left: 1%;
       padding-right: 0;
 
       @media @mobile {
         order: 1;
       }
-    }
 
+     
+
+    }
+    
+    .pop-up {
+      width: 700px;
+      //padding: 20px 5px 5px 20px;
+      margin-left: 50px;
+      background-color: lightblue;
+      //display: none;
+      position: relative;
+      //.border();
+      display: flex;
+      justify-items: center;
+       
+      .form-container input[type=text], .form-container input[type=email], .form-container input[type=submit] {
+        padding: 10px 15px 5px 10px;
+        //.border();
+      }
+
+      .mail-list-container {
+        //.border();
+        padding-left: 30rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+      }
+    }
     .img-content {
+      padding-top: 2.5rem;
       padding-right: 1%;
       padding-left: 0;
 
