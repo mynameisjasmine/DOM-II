@@ -25,22 +25,21 @@ x.addEventListener('mouseleave', function(){
 
 //Event Listener 3
 
-window.onload = function prepareEventHandlers() {
- alert('Welcome to Fun Bus!');
+ function onloadWindow() { 
+  window.onload = function prepareEventHandlers() {
+  alert('Welcome to Fun Bus!');
 };
-/*window.addEventListener('mousedown', function(event){
- alert('This is Fun Bus!');
- console.log(event); 
-});  */
-
+ 
+}
+onloadWindow() 
 
 //Event Listener 4
-/*let eventblurb = document.querySelector('destination');
-eventblurb.forEach(function(x,i){
- x.addEventListener('mouseenter', function(event){
-    eventblurb.style.border.color = 'green';
-    });
-}) */
+let eventSubmitMail = document.getElementsByClassName('mail-list-container');
+eventSubmitMail.addEventListener('click', (event) => {
+    event.preventDefault();
+    onloadWindow(); 
+});
+
 
 
 
