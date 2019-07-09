@@ -1,7 +1,23 @@
 // Your code goes here
-const goTag = document.querySelector(".text-content h2");
-//console.log(goTag);
 
-goTag.addEventListener('mouseover', function(event){
-event.target.style.color = 'red';
+// Changes all h2 elements to red when moused over
+    
+const goTag = document.querySelectorAll("h2");
+
+
+goTag.forEach(function(x,i){
+x.addEventListener('mouseover', function(){
+    goTag[i].style.color = 'red';
+});
+
+x.addEventListener('mouseleave', function(){
+    goTag[i].style.color = 'black';
+});
+});
+
+const dragImage = document.querySelector(".map");
+//console.log('dragImage',dragImage);
+
+dragImage.addEventListener('dragstart', function(event){
+event.dataTransfer.setData("text", event.target.id)
 })
