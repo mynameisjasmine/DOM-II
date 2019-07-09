@@ -2,6 +2,6 @@
 const goTag = document.querySelector(".text-content h2");
 //console.log(goTag);
 
-goTag.addEventListener('click', function(){
-    
+goTag.addEventListener('mouseover', function(event){
+event.target.style.color = 'red';
 })
