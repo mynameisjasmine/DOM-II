@@ -221,6 +221,7 @@ img {
 .footer {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
+  margin-top: 4rem;
   background: #FFEBCD;
 }
 .footer p {
@@ -352,4 +353,22 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.home .pop-up {
+  width: 700px;
+  margin-left: 50px;
+  background-color: #c8e4ee;
+  position: relative;
+  display: flex;
+  justify-items: center;
+}
+.home .pop-up .form-container input[type=text],
+.home .pop-up .form-container input[type=email],
+.home .pop-up .form-container input[type=submit] {
+  padding: 10px 15px 5px 10px;
+}
+.home .pop-up .mail-list-container {
+  padding-left: 30rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }

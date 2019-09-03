@@ -1,6 +1,6 @@
 // Your code goes here
 
-// #1 Changes all h2 elements to red when moused over
+// #1 Changes the text on all h2 elements to red when moused over
     
 const goTag = document.querySelectorAll("h2");
 
@@ -28,20 +28,69 @@ updatePicture.addEventListener('click', event => {
 // #3 A popup will alert when any key is pressed
 
 window.addEventListener('keydown', event => {
-    alert('Welcome to our website!');
+    alert('You pressed a key!');
 })
 
-// #4
 
-// #5
+// #4 A popup will alert when the page loads
 
-// #6
+window.addEventListener('load', event => {
+    alert('Site has loaded!');
+})
 
-//#7
 
-// #8
+// #5 Will change the color of the text when a p tag is double clicked
 
-// #9
+let dbl = document.querySelectorAll("p");
 
-// #10
+dbl.forEach(items => {
+    items.addEventListener('dblclick', event => {
+        items.style.color = "green";
+    })
+})
+
+// #6 Gives an alert when the window is resized
+
+window.addEventListener('resize', event => {
+    alert('Do not resize the window');
+})
+
+
+
+//#7 Changes the image when image is dragged 
+
+let dragged = document.querySelector(".img-fluid");
+
+dragged.addEventListener('drag', event => {
+    dragged.src = "https://cdn.citywonders.com/media/19472/new-project-6-min.jpg?anchor=center&mode=crop&width=960&height=640&rnd=132103422980000000"
+})
+
+
+// #8 Changes the body color when wheeling / scrolling
+
+let wheel = document.querySelector("body");
+
+wheel.addEventListener('wheel', event => {
+    wheel.style.backgroundColor = "pink";
+})
+
+
+// #9 Name input background changes to purple when field is clicked in
+
+let email = document.querySelector('input[type="text"]');
+
+email.addEventListener('focus', event => {
+ email.style.background = "purple";
+})
+
+
+
+// #10 Added prevent default to submit button
+
+let noSubmit = document.querySelector('input[type="submit"]')
+
+noSubmit.addEventListener('click', event => {
+   alert('This button is not working') 
+   event.preventDefault();
+})
 
